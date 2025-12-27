@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Land Bank Anti-Fraud App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Noto Sans TC"', 'sans-serif'],
+            },
+            colors: {
+              land: {
+                50: '#f0fdfa',
+                100: '#ccfbf1',
+                500: '#14b8a6', // Teal
+                600: '#0d9488',
+                700: '#0f766e',
+                800: '#115e59', // Deep Green/Blue
+                900: '#134e4a',
+              },
+              neu: {
+                base: '#efefef',
+                light: '#ffffff',
+                shadow: '#d1d9e6',
+              }
+            },
+            boxShadow: {
+              'neu-flat': '6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff',
+              'neu-pressed': 'inset 4px 4px 8px #c5c5c5, inset -4px -4px 8px #ffffff',
+              'neu-float': '8px 8px 16px #c5c5c5, -8px -8px 16px #ffffff',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #e0e5ec;
+        margin: 0;
+        overflow: hidden; /* Prevent scrolling body, handle in app */
+      }
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+      .bg-grid-pattern {
+        background-image: linear-gradient(rgba(13, 148, 136, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(13, 148, 136, 0.03) 1px, transparent 1px);
+        background-size: 20px 20px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
